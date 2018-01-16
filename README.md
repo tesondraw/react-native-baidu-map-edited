@@ -10,7 +10,9 @@ Baidu Map SDK modules and view for React Native(Android & iOS), support react na
 ![iOS](https://raw.githubusercontent.com/lovebing/react-native-baidu-map/master/images/ios.jpg)
 
 ### Install 安装
-    npm install react-native-baidu-map-edited --save
+    npm install react-native-baidu-map-edited --save  
+    或者
+    yarn add react-native-baidu-map-edited
 ### Import 导入
 
 #### Android Studio
