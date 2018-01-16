@@ -1,0 +1,23 @@
+{
+  "name": "react-native-baidu-map-edited",
+  "version": "0.6.1",
+  "description": "Baidu Map SDK modules and view for React Native(Android & IOS), support react native 0.40+.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tesondraw/react-native-baidu-map-edited.git"
+  },
+  "keywords": [
+    "Baidu Map",
+    "React Native"
+  ],
+  "author": "Teson Draw <1079522947@qq.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tesondraw/react-native-baidu-map-edited/issues"
+  },
+  "homepage": "https://github.com/tesondraw/react-native-baidu-map-edited#readme"
+}
