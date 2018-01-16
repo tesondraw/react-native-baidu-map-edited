@@ -6,7 +6,34 @@
  *
  */
 
-#import <BaiduMapAPI_Base/BMKTypes.h>
+#import <CoreLocation/CoreLocation.h>
+#import <Foundation/Foundation.h>
+
+
+///此类表示地址结果的层次化信息
+@interface BMKAddressComponent : NSObject
+{
+	NSString* _streetNumber;
+	NSString* _streetName;
+	NSString* _district;
+	NSString* _city;
+	NSString* _province;
+}
+
+/// 街道号码
+@property (nonatomic, strong) NSString* streetNumber;
+/// 街道名称
+@property (nonatomic, strong) NSString* streetName;
+/// 区县名称
+@property (nonatomic, strong) NSString* district;
+/// 城市名称
+@property (nonatomic, strong) NSString* city;
+/// 省份名称
+@property (nonatomic, strong) NSString* province;
+
+@end
+
+
 
 ///反地址编码结果
 @interface BMKReverseGeoCodeResult : NSObject
@@ -22,10 +49,6 @@
 @property (nonatomic, strong) NSString* address;
 ///商圈名称
 @property (nonatomic, strong) NSString* businessCircle;
-///结合当前位置POI的语义化结果描述
-@property (nonatomic, strong) NSString* sematicDescription;
-///城市编码
-@property (nonatomic, strong) NSString* cityCode;
 ///地址坐标
 @property (nonatomic) CLLocationCoordinate2D location;
 ///地址周边POI信息，成员类型为BMKPoiInfo
