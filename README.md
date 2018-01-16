@@ -1,13 +1,13 @@
 
 # react-native-baidu-map-edited [![npm version](https://img.shields.io/npm/v/react-native-baidu-map.svg?style=flat)](https://www.npmjs.com/package/react-native-baidu-map-edited)
 
-首先感谢lovebing，以下代码基本都来自lovebing，稍微做了一些改动(只修改了iOS部分)，编译不报错而已。: )
-Baidu Map SDK modules and view for React Native(Android & iOS), support react native 0.30+
+首先感谢lovebing，以下代码基本都来自lovebing，稍微做了一些改动(<font color=#dc143c>只修改了iOS部分</font>)，编译不报错而已。: )  
+Baidu Map SDK modules and view for React Native(Android & iOS), support react native 0.40+
 
-百度地图 React Native 模块，支持 react native 0.30+
+百度地图 React Native 模块，支持 react native 0.40+
 
 ![Android](https://raw.githubusercontent.com/lovebing/react-native-baidu-map/master/images/android.jpg)
-![IOS](https://raw.githubusercontent.com/lovebing/react-native-baidu-map/master/images/ios.jpg)
+![iOS](https://raw.githubusercontent.com/lovebing/react-native-baidu-map/master/images/ios.jpg)
 
 ### Install 安装
     npm install react-native-baidu-map-edited --save
@@ -25,10 +25,10 @@ project(':react-native-baidu-map-edited').projectDir = new File(settingsDir, '..
             android:name="com.baidu.lbsapi.API_KEY" android:value="xx"/>`
 
 #### Xcode
-- Project navigator->Libraries->Add Files to 选择 react-native-baidu-map-edited/ios/RCTBaiduMap.xcodeproj
-- Project navigator->Build Phases->Link Binary With Libraries 加入 libRCTBaiduMap.a
-- Project navigator->Build Settings->Search Paths， Framework search paths 添加 react-native-baidu-map-edited/ios/lib，Header search paths 添加 react-native-baidu-map-edited/ios/RCTBaiduMap
-- 添加依赖, react-native-baidu-map-edited/ios/lib 下的全部 framwordk， CoreLocation.framework和QuartzCore.framework、OpenGLES.framework、SystemConfiguration.framework、CoreGraphics.framework、Security.framework、libsqlite3.0.tbd（xcode7以前为 libsqlite3.0.dylib）、CoreTelephony.framework 、libstdc++.6.0.9.tbd（xcode7以前为libstdc++.6.0.9.dylib）
+- Project navigator->Libraries->Add Files to 选择 /node_modules/react-native-baidu-map-edited/ios/RCTBaiduMap.xcodeproj
+
+- Project navigator->Build Settings->Search Paths， Framework search paths 添加 $(SRCROOT)/../node_modules/react-native-baidu-map-edited/ios/lib，Header search paths 添加 react-native-baidu-map-edited/ios/RCTBaiduMap
+- 添加依赖, react-native-baidu-map-edited/ios/lib 下的全部 framework， CoreLocation.framework和QuartzCore.framework、OpenGLES.framework、SystemConfiguration.framework、CoreGraphics.framework、Security.framework、libsqlite3.0.tbd（xcode7以前为 libsqlite3.0.dylib）、CoreTelephony.framework 、libstdc++.6.0.9.tbd（xcode7以前为libstdc++.6.0.9.dylib）
 - 添加 BaiduMapAPI_Map.framework/Resources/mapapi.bundle
 
 - [其它一些注意事项可参考百度地图LBS文档](http://lbsyun.baidu.com/index.php?title=iossdk/guide/create-project/ak)
